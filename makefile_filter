@@ -1,0 +1,5 @@
+# touch foo.c bar.c baz.s ugh.h
+deps := foo.c bar.c baz.s ugh.h
+
+target: $(deps)
+	$(info $(filter %.c %.s,$(deps)))
