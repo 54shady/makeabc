@@ -1,0 +1,7 @@
+# Usage in vim
+# :!make -f %
+
+# builtin error function
+# print error mesage and stop make
+all:
+	$(error "Oops..., an error occurred")
