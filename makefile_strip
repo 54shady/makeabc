@@ -1,0 +1,3 @@
+all:
+	$(info $(strip "a b c"))
+	$(info $(strip "D 	e   F"))
