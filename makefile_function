@@ -1,0 +1,17 @@
+# Usage
+# :!make -f % one
+# :!make -f % two
+# :!make -f % thr
+
+define function_in_makefile
+	$(info "function being call", $(1), $(2))
+endef
+
+one:
+	$(call function_in_makefile)
+
+two:
+	$(call function_in_makefile, par1)
+
+thr:
+	$(call function_in_makefile, par1, par2)
