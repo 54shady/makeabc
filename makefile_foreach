@@ -1,0 +1,7 @@
+# mkdir a b c d
+# touch a/a.txt b/b.txt
+dirs := a b c d
+files := $(foreach dir,$(dirs),$(wildcard $(dir)/*))
+
+all:
+	$(info $(files))
