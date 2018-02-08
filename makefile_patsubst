@@ -1,0 +1,4 @@
+# patsubst(X,Y,Z)
+# In Z range, find X, replace to Y
+all:
+	$(info $(patsubst %.c,%.o,foo.c bar.c zoo.c))
