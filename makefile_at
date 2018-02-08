@@ -1,0 +1,11 @@
+# Usage in vim
+# :!make -f % no_at_target
+# :!make -f % at_target
+
+# default print shell command
+no_at_target:
+	echo "no @"
+
+# don't print shell command
+at_target:
+	@echo "has @"
