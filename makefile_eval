@@ -1,0 +1,5 @@
+# Usage in vim
+# touch null1.mk null2.mk
+# :!make -f %
+all:
+	$(foreach mk,$(shell ls *.mk),$(info include local makefiles $(mk)) $(eval include $(mk)))
