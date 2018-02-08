@@ -1,0 +1,12 @@
+# default make the first one target
+.PHONY:one
+one:
+	@echo "make ==> one"
+
+.PHONY:two
+two:
+	@echo "make ==> two"
+
+.PHONY:three
+three:
+	@echo "make ==> three"
