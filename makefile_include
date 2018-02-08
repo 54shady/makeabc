@@ -1,0 +1,4 @@
+# don't cause error when include file nonexistent
+-include Makefile_no_this_file
+all:
+	$(info "include makefile")
