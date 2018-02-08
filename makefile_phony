@@ -1,0 +1,10 @@
+# .PHONY to delare a target
+# to avoid a file has the same name with target
+
+# test : touch mytarget in the shell
+.PHONY:phony_target
+phony_target:
+	$(info "phony target")
+
+no_phony_target:
+	$(info "no phony target")
