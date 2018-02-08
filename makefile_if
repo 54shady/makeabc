@@ -1,0 +1,7 @@
+# test : touch xxoo
+all:
+ifeq (xxoo,$(findstring xxoo,$(shell ls -l)))
+	$(info "find string xxoo")
+else
+	$(info "find noting")
+endif
