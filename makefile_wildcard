@@ -1,0 +1,5 @@
+# touch a.wc b.wc
+objs := $(wildcard *.wc)
+
+all:
+	$(info $(objs))
