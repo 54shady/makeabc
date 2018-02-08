@@ -1,0 +1,3 @@
+# test : touch has_this_file
+target:
+	$(info $(findstring has_this_file,$(shell ls -l)))
