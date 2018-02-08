@@ -1,0 +1,16 @@
+# Usage in vim
+# :!make -f %
+
+# expand later, with latest values
+x = old_x
+y = $(x) bar
+x = new_x
+
+# expand now, ignore new values
+xx = old_xx
+yy := $(xx) baar
+xx = new_xx
+
+all:
+	$(info $(y))
+	$(info $(yy))
