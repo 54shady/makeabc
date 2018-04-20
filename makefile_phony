@@ -1,10 +1,17 @@
 # .PHONY to delare a target
 # to avoid a file has the same name with target
 
-# test : touch mytarget in the shell
+# test : touch no_phony_target in the shell
+# !make -f % no_phony_target
+# compare the different the two target
+
+# even if there is a same file name with the target name
+# the .PHONY target will be make still
 .PHONY:phony_target
 phony_target:
 	$(info "phony target")
 
+# if no .PHONY declare, and exist same name in the directory
+# the target will no be make
 no_phony_target:
 	$(info "no phony target")
